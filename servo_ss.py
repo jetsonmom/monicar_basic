@@ -53,7 +53,9 @@ try:
         kit.servo[0].angle = i
         print(f"Servo 0 angle: {i}")
         time.sleep(0.05)  # 서보 모터의 각도 변경 후 잠시 대기
-
+    # 서보 모터를 정중앙으로 위치
+    kit.servo[0].angle = 90
+    print("Servo 0 is now centered at 90 degrees.")
     print("Servo control test completed.")
 
 except Exception as e:
