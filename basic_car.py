@@ -71,11 +71,19 @@ class VehicleController:
     def perform_sequence(self):
         # 모터를 중립 위치로 설정
         self.throttle_controller.run(self.SPEED_CENTER)
+<<<<<<< HEAD
+=======
+        print("74")
+>>>>>>> ecdfe38ab2c85f23f26de2208f987c967982933e
         time.sleep(1)
 
         # 앞으로 이동
         forward_pulse = self.SPEED_CENTER + int(self.k_throttle * self.SPEED_LIMIT)
         self.throttle_controller.run(forward_pulse)
+<<<<<<< HEAD
+=======
+          print("80")
+>>>>>>> ecdfe38ab2c85f23f26de2208f987c967982933e
         time.sleep(3)
 
         # 뒤로 이동
