@@ -33,4 +33,5 @@ python3 test_servo.py
    ```bash
    python3 test_servo.py
    ```
-
+4. **오린에서 basic_servo.py 실행시에  코드 수정해야함.**
+busnum=1을 busnum=7로 바꿔줘야함
